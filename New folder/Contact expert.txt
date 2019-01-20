@@ -1,0 +1,13 @@
+import smtplib 
+  
+s = smtplib.SMTP('rohithkattamuri@gmail.com',port_no) 
+
+s.starttls() 
+  
+s.login("rohithkattamuri@gmail.com", "vonet_9") 
+  
+message = "Message_you_need_to_send"
+  
+s.sendmail("rohithkattamuri@gmail.com", "saikrishna_rohith@srmap.edu.in", message) 
+s.quit() 
+
